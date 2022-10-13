@@ -15,5 +15,7 @@ test('404 page is doggified', async ({ page }) => {
 
   const secondVideoURL = await videoSource.getAttribute('src');
 
+  // hello lisa!
+
   expect(firstVideoURL).not.toBe(secondVideoURL);
 });
