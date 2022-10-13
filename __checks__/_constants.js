@@ -1,3 +1,3 @@
 module.exports = {
-  MAGIC_NUMBER: 42
+  getFavDog: () => (Math.random() > 0.5 ? "Navi" : "Schnitzel"),
 }
