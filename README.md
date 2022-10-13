@@ -1,0 +1,1 @@
+# checkly-gh-sync-example
