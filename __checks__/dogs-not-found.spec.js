@@ -1,5 +1,6 @@
 // @ts-check
 const { test, expect } = require("@playwright/test")
+const { getFavDog } = require("./_constants")
 
 test("404 page is doggified", async ({ page }) => {
   await page.goto("https://www.stefanjudis.com/NOT_FOUND/")
@@ -15,7 +16,7 @@ test("404 page is doggified", async ({ page }) => {
 
   const secondVideoURL = await videoSource.getAttribute("src")
 
-  // hello Lisa!
+  console.log(getFavDog(), "LISA")
 
   expect(firstVideoURL).not.toBe(secondVideoURL)
 })
